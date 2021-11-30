@@ -20,6 +20,7 @@ function InputField(props) {
  return (
   <div className="auto-input">
    <input
+    className="input-bar"
     value={props.currentInput}
     // autoFocus
     ref={inputRef}
@@ -33,6 +34,7 @@ function InputField(props) {
    />
 
    <span
+    className="hide-btn"
     onClick={() => {
      inputRef.current.focus();
      props.setIsHidden(!props.isHidden);
@@ -43,8 +45,10 @@ function InputField(props) {
 
    {showX && (
     <span
+     className={'delete-btn'}
      onClick={() => {
       inputRef.current.value = '';
+      props.setCurrentInput('');
      }}
     >
      ❌

@@ -5,30 +5,21 @@ import countries from './model/countriesData';
 import { useState } from 'react';
 import DesplayedCountriesList from './core/Countries';
 import InputField from './core/InputField';
-// change it so value of input is stored and set here
+
 function App() {
- //  const [countriesList, setCountriesList] = useState([]);
  const [isShowCountries, setShowCountries] = useState(false);
  const [currentInput, setCurrentInput] = useState('');
  const [isHidden, setIsHidden] = useState(false);
  const [refToInput, setRefToInput] = useState('');
- //  useEffect(() => {
- //   setCountriesList(countries);
- //  }, []); // componentDidMount - will happen only once, when the component mounted for the first time
-
- //  const changeShowCountries = (trueOrFalse) => {
- //     setShowCountries(trueOrFalse)
- //   console.log('CHANGE');
- //  };
 
  return (
   <div
-   className="input-feild"
-   onBlur={() => {
-    setTimeout(() => {
-     setShowCountries(false);
-    }, 100);
-   }}
+   className="input-container"
+//    onBlur={() => {
+//     setTimeout(() => {
+//      setShowCountries(false);
+//     }, 100);
+//    }}
   >
    <InputField
     passToParent={setRefToInput}
