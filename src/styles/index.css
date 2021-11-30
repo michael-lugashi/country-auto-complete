@@ -1,0 +1,38 @@
+#root {
+ height: 200vw;
+}
+.input-container {
+ width: 20vw;
+ margin: auto;
+ font-size: 30px;
+ position: relative;
+}
+.input-bar {
+ width: 300px;
+ font-size: 30px;
+ border-radius: 10px;
+}
+.hide-btn {
+ font-size: 20px;
+ position: absolute;
+ top: 5px;
+ left: 275px;
+}
+.delete-btn {
+ font-size: 20px;
+ position: absolute;
+ top: 5px;
+ left: 250px;
+}
+.countries-list {
+ padding-inline-start: 0;
+ list-style-type: none;
+ margin-inline-start: 0;
+ font-size: 20px;
+ max-height: 400px;
+ background-color:rgb(236, 236, 236);
+ overflow: hidden;
+ overflow-y: auto;
+ margin-top: 0;
+ margin-left: 10px;
+}
